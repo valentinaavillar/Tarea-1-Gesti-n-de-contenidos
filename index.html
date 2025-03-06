@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Val Delicias Repostería</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #eee;
+        }
+
+        .navbar {
+            background-color: #a00000;
+            overflow: hidden;
+        }
+
+        .navbar {
+            background-color: aliceblue;
+            padding-left: 35%;
+        }
+
+        .navbar a {
+            float: left;
+            display: flex;
+            color: #fff;
+            align-self: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            background-color: crimson;
+        }
+
+        .navbar a:hover {
+            background-color: #b71c1c;
+        }
+
+        .content {
+            padding: 20px;
+            padding-top: 7%;
+            text-align: start;
+        }
+
+        .content img #img-inicio {
+            width: 30%;
+            max-width: 100%;
+            height: auto;
+            float: inline-end;
+        }
+        .contenedor{
+            width: 80%;
+            height: auto;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card{
+            width: 300px;
+            height: 430px;
+            box-shadow: 10px 5px 10px 3px #ccc;
+        }
+
+        .card img{
+            width: 70%;
+            height: 200px;
+            object-fit: cover;
+            padding-left: 10%;
+        }
+
+        .card h3{
+            text-align: center;
+            padding: 10px;
+        }
+
+        .card p{
+            padding: 3px;
+            font-size: 18px;
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home" onclick="showSection('home')">HOME</a>
+        <a href="#donas" onclick="showSection('donas')">DONAS</a>
+        <a href="#pasteles" onclick="showSection('pasteles')">PASTELES</a>
+        <a href="#cupcakes" onclick="showSection('cupcakes')">CUPCAKES</a>
+        <a href="#tartas" onclick="showSection('tartas')">TARTAS</a>
+    </div>
+    <!--Botón HOME-->
+    <div id="home" class="content">
+        <div class="caja-titulo">
+            <h1 style="color: #a00000; width: 40%; display: block; font-size: 35px;">¡Bienvenidos a Val Delicias <br>
+                Repostería!</h1>
+        </div>
+        <div class="caja-contenido" style="display: flex;">
+            <p style="width: 50%; font-size: 25px;">
+                En Val, nos apasiona convertir tus momentos dulces en recuerdos
+                inolvidables. Elaboramos cada creación con amor, dedicación y los
+                mejores ingredientes para brindarte sabores que te harán sonreír.
+            </p>
+            <img src="Img/Imagen-inicio.png" alt="Cheesecake con frambuesas" id="img-inicio" style="margin-left: 200px;
+            margin-top: -10%; width: 25%;" />
+        </div>
+    </div>
+
+    <!--Botón DONAS-->
+    <div id="donas" class="content" style="display: none">
+        <div class="contenedor">
+            <div class="card">
+                <img src="Img/Dona-chocolate.png" alt="Dona de chocolate">
+                <h3>Dona de chocolate</h3>
+                <p>Dona con glaseado de chocolate y chispas de chocolate</p>
+            </div>
+
+            <div class="card">
+                <img src="Img/Dona-fresa.png" alt="Dona de fresa">
+                <h3>Dona de fresa</h3>
+                <p>Dona glaseada con cobertura blanca, decorada con pequeñas gotas rojas y una fresa.</p>
+            </div>
+    
+    
+            <div class="card">
+                <img src="Img/Dona-oreo.png" alt="Dona de oreo">
+                <h3>Dona de oreo</h3>
+                <p>Dona rellena de crema blanca, con glaseado blanco y trozos de galleta oreo.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Botón PASTELES-->
+    <div id="pasteles" class="content" style="display: none">
+        <div class="contenedor">
+            <div class="card">
+                <img src="Img/Pastel-red-velvet.png" alt="Pastel Red-Velvet">
+                <h3>Red Velvet</h3>
+                <p>Pastel con capas de bizcocho red velvet y glaseado de crema de queso.</p>
+            </div>
+
+            <div class="card">
+                <img src="/Img/Pastel-chocolate.png" alt="Pastel Chocolate">
+                <h3>Chocolate</h3>
+                <p>Pastel de chocolate con varias capas de bizcocho, crema de chocolate, cubierta con glaseado y virutas de chocolate.</p>
+            </div>
+    
+    
+            <div class="card">
+                <img src="Img/Pastel-fresa.png" alt="Pastel Fresa">
+                <h3>Fresa</h3>
+                <p>Pastel de fresa con capas de bizcocho, crema y fresas frescas, decorado con crema rosa y fresas enteras.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Botón CUPCAKES-->
+    <div id="cupcakes" class="content" style="display: none">
+        <div class="contenedor">
+            <div class="card">
+                <img src="Img/Cupcake-fresa.png" alt="Cupcake Fresa">
+                <h3>Cupcake de fresa</h3>
+                <p>Cupcake con un glaseado rosa decorado con una frambuesa.</p>
+            </div>
+
+            <div class="card">
+                <img src="Img/Cupcake-vainilla.png" alt="Cupcake Vainilla">
+                <h3>Cupcake de vainilla</h3>
+                <p>Cupcake con glaseado de crema blanca y chispas de colores.</p>
+            </div>
+    
+    
+            <div class="card">
+                <img src="Img/Cupcake-chocolate.png" alt="Cupcake Chocolate" style="width: auto;">
+                <h3>Cupcake de chocolate</h3>
+                <p>Cupcake con un glaseado de chocolate y chispas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Botón TARTAS-->
+    <div id="tartas" class="content" style="display: none">
+        <div class="contenedor">
+            <div class="card">
+                <img src="Img/Cheesecake-fresa.png" alt="Tarta Fresa">
+                <h3>Cheesecake de fresa</h3>
+                <p>Cheesecake de queso con frambuesas frescas encima.</p>
+            </div>
+
+            <div class="card">
+                <img src="Img/Cheesecake-mora.png" alt="Cheesecake Mora">
+                <h3>Cheesecake de mora</h3>
+                <p>Cheesecake de queso con salsa de mora por encima.</p>
+            </div>
+    
+    
+            <div class="card">
+                <img src="Img/Cheesecake-oreo.png" alt="Cheesecake-oreo">
+                <h3>Cheesecake de oreo</h3>
+                <p>Cheesecake de oreo, decorado con trozos de galleta por encima.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll(".content");
+            sections.forEach(function (section) {
+                section.style.display = "none";
+            });
+            document.getElementById(sectionId).style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
